@@ -29,7 +29,7 @@ piece = [{"min": 1000, "color": 'darkred'},
 map = Map()
 # 设置地图相关项
 map.set_global_opts(title_opts=opts.TitleOpts(title="疫情地图", pos_left='center'),
-                    visualmap_opts=opts.VisualMapOpts(is_piecewise=True, pieces=piece), )
+                    visualmap_opts=opts.VisualMapOpts( max_=200, is_piecewise=True, pieces=piece), )
 map.add("", data_list, "china")
 # 生成地图
 map.render('map_simplifed.html')  # 初始化地图
